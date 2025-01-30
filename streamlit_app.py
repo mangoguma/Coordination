@@ -37,7 +37,8 @@ else:
                                 "outer": "아우터 추천",
                                 "top": "상의 추천",
                                 "bottom": "하의 추천",
-                                "description": "해당 코디에 대한 설명"
+                                "description": "해당 코디에 대한 설명",
+                                "image_description": "코디의 분위기를 시각적으로 떠올릴 수 있도록 설명"
                             },
                             "secondCoordination": { ... },
                             "thirdCoordination": { ... }
@@ -94,4 +95,5 @@ else:
                 st.write(f"- **상의**: {recommendations[key]['top']}")
                 st.write(f"- **하의**: {recommendations[key]['bottom']}")
                 st.write(f"📌 {recommendations[key]['description']}")
+                st.write(f"🖼 이미지 설명: {recommendations[key]['image_description']}")
                 st.write("---")
